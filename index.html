@@ -8,7 +8,7 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-   
+
 
 
     <!-- Font Awesome -->
@@ -31,7 +31,7 @@
             </div>
 
             <!-- DESKTOP MENU -->
-           <nav class="hidden lg:flex gap-8 font-medium text-white items-center">
+            <nav class="hidden lg:flex gap-8 font-medium text-white items-center">
 
                 <a href="#home" class="hover:text-yellow-400">Home</a>
                 <a href="#About" class="hover:text-yellow-400">About</a>
@@ -43,17 +43,20 @@
                 <!-- DESKTOP SOCIAL & DARK MODE -->
                 <div class="flex items-center gap-4 ml-6 text-xl">
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                        title="Visit my LinkedIn profile" class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        title="Visit my LinkedIn profile"
+                        class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
                         <i class="fab fa-linkedin"></i>
                     </a>
 
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        title="Visit my Facebook profile" class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        title="Visit my Facebook profile"
+                        class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
                         <i class="fab fa-facebook"></i>
                     </a>
 
                     <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
-                        title="Chat with me on WhatsApp" class="text-white-500 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        title="Chat with me on WhatsApp"
+                        class="text-white-500 text-xl hover:text-yellow-400 hover:scale-110 transition">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                     <button onclick="toggleDarkMode()"
@@ -70,7 +73,7 @@
 
         <!-- MOBILE MENU DROPDOWN -->
         <div id="mobileMenu" class="hidden lg:hidden w-full overflow-hidden bg-[#0b6b5f] px-4 py-4 space-y-2">
-         <a href="#home" class="block py-2 px-3 rounded hover:text-yellow-400">Home</a>
+            <a href="#home" class="block py-2 px-3 rounded hover:text-yellow-400">Home</a>
             <a href="#About" class="block py-2 px-3 rounded hover:text-yellow-400">About</a>
             <a href="#skills" class="block py-2 px-3 rounded hover:text-yellow-400">Skills</a>
             <a href="#services" class="block py-2 px-3 rounded hover:text-yellow-400">Services</a>
@@ -110,53 +113,64 @@
     <section id="home" class="min-h-screen flex items-center
               bg-gradient-to-br from-[#0b6b5f] via-[#0f766e] to-[#115e59]
                dark:from-gray-900 dark:via-gray-800 dark:to-gray-950">
-    
+
         <div class="max-w-7xl mx-auto px-6 w-full
               flex flex-col md:flex-row items-center justify-between gap-12">
-    
+
             <!-- LEFT TEXT -->
             <div class="w-full md:w-1/3 flex flex-col space-y-6 text-center md:text-left">
-    
+
                 <p class="text-lg sm:text-xl text-gray-200 font-semibold">
                     Hey, my name is
                 </p>
-    
+
                 <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl
                 font-extrabold leading-tight text-white">
                     AMAN <br> KUMAR
                 </h1>
-    
+
                 <div class="w-20 md:w-24 h-2 bg-yellow-400 rounded-full mx-auto md:mx-0"></div>
-    
+
                 <p class="uppercase tracking-widest text-gray-200 text-sm sm:text-base md:text-lg">
                     Web Designer / Frontend Developer <br>
                     UI/UX Designer
                 </p>
-    
+
+                <div class="flex gap-4 justify-center md:justify-start mt-4">
+                    <a href="Blue and Gray Simple Professional CV Resume Aman Kumar.pdf" download class="bg-yellow-400 text-[#0b6b5f] px-6 py-3 rounded-full font-semibold
+                       hover:bg-white hover:text-[#0b6b5f] transition duration-300">
+                        Download CV
+                    </a>
+                
+                    <a href="#contact" class="border border-white px-6 py-3 rounded-full font-semibold
+                       hover:bg-white hover:text-[#0b6b5f] transition duration-300">
+                        Hire Me
+                    </a>
+                </div>
+
+
             </div>
-    
+
             <!-- CENTER IMAGE -->
-          <div class="w-full md:w-1/3 flex justify-center">
-    
-    <div class="relative bg-yellow-400 rounded-[200px] 
+            <div class="w-full md:w-1/3 flex justify-center">
+
+                <div class="relative bg-yellow-400 rounded-[200px] 
         w-[260px] sm:w-[300px] 
         h-[380px] sm:h-[420px]
         overflow-hidden shadow-2xl">
 
-        <!-- Image -->
-        <img src="IMG20241028131354-removebg-preview.png" 
-             alt="Profile"
-             class="absolute bottom-0 left-1/2 -translate-x-1/2 
+                    <!-- Image -->
+                    <img src="IMG20241028131354-removebg-preview.png" alt="Profile" class="absolute bottom-0 left-1/2 -translate-x-1/2 
              w-full object-contain" />
 
-    </div>
+                </div>
 
-</div>
+            </div>
 
-    
+
             <!-- RIGHT STATS -->
             <div class="w-full md:w-1/3 flex flex-col text-center md:text-right space-y-10">
-    
+
                 <div>
                     <p class="text-gray-200 uppercase tracking-widest text-sm">
                         Experience
@@ -165,7 +179,7 @@
                         3 Months Internship
                     </h2>
                 </div>
-    
+
                 <div>
                     <p class="text-gray-200 uppercase tracking-widest text-sm">
                         Projects Done
@@ -174,9 +188,9 @@
                         2+
                     </h2>
                 </div>
-    
+
             </div>
-    
+
         </div>
     </section>
 
@@ -410,13 +424,13 @@
                     MY SERVICES
                 </h2>
 
-            <a href="#home" class="bg-[#e7f2ef] text-[#0b6b5f] dark:bg-white dark:text-gray-900 
+                <a href="#home" class="bg-[#e7f2ef] text-[#0b6b5f] dark:bg-white dark:text-gray-900 
                px-6 py-2 rounded-full font-semibold inline-block whitespace-nowrap
                hover:bg-[#0b6b5f] hover:text-white 
                hover:shadow-[0_30px_70px_rgba(11,107,95,0.4)] 
                hover:-translate-y-3 transition duration-300 ease-in-out">
-                VIEW ALL
-            </a>
+                    VIEW ALL
+                </a>
 
 
 
@@ -686,18 +700,21 @@
                 <p class="text-gray-200 mb-4">📧 amankumar06052000@gmail.com</p>
 
                 <div class="flex md:justify-end gap-4 text-2xl">
-                   <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                        title="Visit my LinkedIn profile" class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        title="Visit my LinkedIn profile"
+                        class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
                         <i class="fab fa-linkedin"></i>
                     </a>
 
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        title="Visit my Facebook profile" class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        title="Visit my Facebook profile"
+                        class="text-white-700 text-xl hover:text-yellow-400 hover:scale-110 transition">
                         <i class="fab fa-facebook"></i>
                     </a>
 
                     <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
-                        title="Chat with me on WhatsApp" class="text-white-500 text-xl hover:text-yellow-400 hover:scale-110 transition">
+                        title="Chat with me on WhatsApp"
+                        class="text-white-500 text-xl hover:text-yellow-400 hover:scale-110 transition">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -730,7 +747,7 @@
 
 
 
- <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
