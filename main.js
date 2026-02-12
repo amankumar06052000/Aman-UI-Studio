@@ -20,17 +20,18 @@ if (localStorage.getItem('theme') === 'dark') {
 
 
 // ================= DOM LOADED =================
-document.addEventListener("DOMContentLoaded", () => {
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page reload
 
-    // ===== MOBILE MENU =====
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
+    const msg = document.getElementById("successMsg");
 
-    if (menuBtn && mobileMenu) {
-        menuBtn.onclick = () => {
-            mobileMenu.classList.toggle('hidden');
-        };
-    }
+    msg.classList.remove("hidden");
+
+    setTimeout(() => {
+        msg.classList.add("hidden");
+    }, 3000);
+
+    this.reset();
 
     // ===== SCROLL TO TOP =====
     const scrollBtn = document.getElementById("scrollTopBtn");
