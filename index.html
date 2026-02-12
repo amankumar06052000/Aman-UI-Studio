@@ -19,68 +19,61 @@
 
 
     <!-- ================= HEADER ================= -->
-    <header class="w-full py-6">
-        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+  <header class="w-full py-6 bg-[#0b6b5f] dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
-            <!-- LOGO -->
-            <div class="flex items-center gap-3">
-                <img src="logo01.img" alt="Logo" class="w-10 h-10 rounded-md object-contain bg-white p-1">
-                <span class="text-2xl font-bold">AMAN</span>
-            </div>
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <img src="logo01.img" alt="Logo" class="w-10 h-10 rounded-md object-contain bg-white p-1">
+      <span class="text-2xl font-bold text-white">AMAN</span>
+    </div>
 
-            <!-- MOBILE MENU BUTTON -->
-            <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+    <!-- DESKTOP MENU -->
+    <nav class="hidden md:flex gap-10 font-medium text-white items-center">
+      <a href="#home" class="hover:text-yellow-400">Home</a>
+      <a href="#About" class="hover:text-yellow-400">About</a>
+      <a href="#skills" class="hover:text-yellow-400">Skills</a>
+      <a href="#services" class="hover:text-yellow-400">Services</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      <a href="#Education" class="hover:text-yellow-400">Education</a>
 
-            <!-- DESKTOP MENU -->
-            <nav class="hidden md:flex gap-10 font-medium">
-                <a href="#home" class="hover:text-yellow-400">Home</a>
-                <a href="#About" class="hover:text-yellow-400">About</a>
-                <a href="#skills" class="hover:text-yellow-400">Skills</a>
-                <a href="#services" class="hover:text-yellow-400">Services</a>
-                <a href="#contact" class="hover:text-yellow-400">Contact</a>
-                <a href="#Education" class="hover:text-yellow-400">Education</a>
-            </nav>
-            <div class="flex justify-end gap-4 text-xl">
+      <!-- DESKTOP SOCIAL & DARK MODE -->
+      <div class="flex items-center gap-4 ml-6 text-xl">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <button onclick="toggleDarkMode()" class="ml-2 px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded">🌙</button>
+      </div>
+    </nav>
 
-                <!-- Add title attributes to social links -->
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                    title="Visit my LinkedIn profile" class="text-white-700 text-xl hover:scale-110 transition">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-white text-3xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
 
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                    title="Visit my Facebook profile" class="text-white-700 text-xl hover:scale-110 transition">
-                    <i class="fab fa-facebook"></i>
-                </a>
+  <!-- MOBILE MENU DROPDOWN -->
+  <div id="mobileMenu" class="hidden md:hidden bg-[#0b6b5f] px-4 py-4 space-y-2 rounded-b-lg shadow-lg">
+    <a href="#home" class="block py-2 px-3 rounded hover:bg-green-600 text-white">Home</a>
+    <a href="#About" class="block py-2 px-3 rounded hover:bg-green-600 text-white">About</a>
+    <a href="#skills" class="block py-2 px-3 rounded hover:bg-green-600 text-white">Skills</a>
+    <a href="#services" class="block py-2 px-3 rounded hover:bg-green-600 text-white">Services</a>
+    <a href="#contact" class="block py-2 px-3 rounded hover:bg-green-600 text-white">Contact</a>
+    <a href="#Education" class="block py-2 px-3 rounded hover:bg-green-600 text-white">Education</a>
 
-                <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
-                    title="Chat with me on WhatsApp" class="text-white-500 text-xl hover:scale-110 transition">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <button onclick="toggleDarkMode()" class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded">🌙</button>
+    <div class="flex justify-center gap-4 mt-4 text-xl text-white">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
 
-            </div>
-
-
-
-        </div>
-
-        <!-- MOBILE MENU -->
-        <div id="mobileMenu" class="hidden md:hidden bg-[#0b6b5f] px-6 pt-4 space-y-3">
-            <a href="#home" class="block">Home</a>
-            <a href="#About" class="block">About</a>
-            <a href="#skills" class="block">Skills</a>
-            <a href="#services" class="block">Services</a>
-            <a href="#contact" class="block">Contact</a>
-            <a href="#Education" class="block">Education</a>
-            <button onclick="toggleDarkMode()" class="mt-4 w-full bg-gray-200 dark:bg-gray-700
-         text-gray-800 dark:text-white
-         px-4 py-2 rounded text-center">
-                🌙 Dark Mode
-            </button>
-        </div>
-    </header>
-
+    <button onclick="toggleDarkMode()"
+      class="mt-4 w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded text-center">
+      🌙 Dark Mode
+    </button>
+  </div>
+</header>
+    
     <!-- ================= HERO SECTION ================= -->
     <section id="home" class="min-h-screen flex items-center
  bg-gradient-to-br from-[#0b6b5f] via-[#0f766e] to-[#115e59]
@@ -250,7 +243,7 @@
                             Senior Secondary (12th)
                         </h4>
                         <p class="text-gray-600 dark:text-white mt-2">
-                            Completed higher secondary education  with 65.8% marks.
+                            Completed higher secondary education (12th) with 65.8% marks.
                         </p>
                     </div>
 
@@ -625,5 +618,6 @@
 
 
 </html>
+
 
 
