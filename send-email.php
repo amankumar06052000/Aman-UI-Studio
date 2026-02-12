@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Aapki email jahan messages jaayenge
-$to = "aapkaemail@example.com"; // yahan apni email likho
+$to = "amankumar06052000@gmail.com"; // yahan apni email likho
 $subject = "New Contact Form Message";
 
 // Email body
@@ -21,3 +21,4 @@ if(mail($to, $subject, $body, $headers)){
     echo "error";
 }
 ?>
+
