@@ -18,27 +18,41 @@ if (localStorage.getItem('theme') === 'dark') {
     document.documentElement.classList.add('dark');
 }
 
+// ================= DOM READY =================
+document.addEventListener("DOMContentLoaded", function () {
 
-// ================= DOM LOADED =================
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // stop page reload
+    // ===== CONTACT FORM =====
+    const form = document.getElementById("contactForm");
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
 
-    const msg = document.getElementById("successMsg");
+            const msg = document.getElementById("successMsg");
+            msg.classList.remove("hidden");
 
-    msg.classList.remove("hidden");
+            setTimeout(() => {
+                msg.classList.add("hidden");
+            }, 3000);
 
-    setTimeout(() => {
-        msg.classList.add("hidden");
-    }, 3000);
+            this.reset();
+        });
+    }
 
-    this.reset();
+    // ===== MOBILE DROPDOWN =====
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+        });
+    }
 
     // ===== SCROLL TO TOP =====
     const scrollBtn = document.getElementById("scrollTopBtn");
 
     if (scrollBtn) {
-
-        window.addEventListener("scroll", () => {
+        window.addEventListener("scroll", function () {
             if (window.scrollY > 300) {
                 scrollBtn.classList.remove("opacity-0", "translate-y-20", "pointer-events-none");
                 scrollBtn.classList.add("opacity-100", "translate-y-0");
@@ -48,7 +62,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
             }
         });
 
-        scrollBtn.addEventListener("click", () => {
+        scrollBtn.addEventListener("click", function () {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
