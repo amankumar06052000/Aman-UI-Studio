@@ -538,6 +538,7 @@
         </div>
     </section>
 
+
     <!-- CONTACT -->
     <section id="contact" class="scroll-mt-24 py-20 bg-gray-200 dark:bg-gray-900">
 
@@ -547,38 +548,59 @@
                 Contact Us
             </h2>
 
-            <div class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow flex flex-col md:flex-row gap-10">
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col md:flex-row gap-10">
 
-                <!-- Left -->
+                <!-- Left Side -->
                 <div class="md:w-1/2 space-y-4">
-                    <div class="p-4 rounded bg-gray-500 dark:bg-gray-800">📍 Himachal Pradesh & (Chandigarh), India
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
+                        📍 Himachal Pradesh & (Chandigarh), India
                     </div>
-                    <div class="p-4 rounded bg-gray-500 dark:bg-gray-800">📞 +91 8894435516</div>
-                    <div class="p-4 rounded bg-gray-500 dark:bg-gray-800">📧 amankumar06052000@gmail.com</div>
+
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
+                        📞 +91 8894435516
+                    </div>
+
+                    <div class="p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white">
+                        📧 amankumar06052000@gmail.com
+                    </div>
                 </div>
 
-                <!-- Right -->
+                <!-- Right Side -->
                 <div class="md:w-1/2">
-                    <form class="space-y-4">
-                        <input class="w-full p-2 rounded border dark:bg-gray-800" placeholder="Name">
-                        <input class="w-full p-2 rounded border dark:bg-gray-800" placeholder="Email">
-                        <textarea class="w-full p-2 rounded border dark:bg-gray-800" rows="4"
-                            placeholder="Message"></textarea>
+                    <form id="contactForm" class="space-y-4">
 
-                        <button onclick="showSuccess()" class="bg-blue-500 text-white px-6 py-2 rounded">
+                        <input type="text" required class="w-full p-3 rounded-lg border border-gray-300 
+                        text-gray-900
+                        dark:border-gray-600 dark:bg-gray-700 dark:text-white
+                        focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]" placeholder="Your Name">
+                        
+                        <input type="email" required class="w-full p-3 rounded-lg border border-gray-300 
+                        text-gray-900
+                        dark:border-gray-600 dark:bg-gray-700 dark:text-white
+                        focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]" placeholder="Your Email">
+                        
+                        <textarea rows="4" required class="w-full p-3 rounded-lg border border-gray-300 
+                        text-gray-900
+                        dark:border-gray-600 dark:bg-gray-700 dark:text-white
+                        focus:outline-none focus:ring-2 focus:ring-[#0b6b5f]" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="bg-[#0b6b5f] text-white px-6 py-3 rounded-full font-semibold
+                        hover:shadow-[0_15px_40px_rgba(11,107,95,0.4)]
+                        hover:-translate-y-1 transition duration-300">
                             Send Message
                         </button>
 
-                        <p id="successMsg" class="hidden text-green-600 mt-2">
+                        <p id="successMsg" class="hidden text-green-600 dark:text-green-400 font-semibold mt-2">
                             ✅ Message sent successfully!
                         </p>
+
                     </form>
                 </div>
 
             </div>
-
         </div>
     </section>
+
 
 
 
