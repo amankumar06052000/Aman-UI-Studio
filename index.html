@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aman-UI-Studio</title>
+    <title>Aman Digital Solutions</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,110 +18,134 @@
 <body class="bg-[#0b6b5f] dark:bg-gray-900 text-white scroll-smooth">
 
 
-    <!-- ================= HEADER ================= -->
-  <header class="w-full py-6 bg-[#0b6b5f] dark:bg-gray-900">
-  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <!-- HEADER -->
+    <header class="w-full py-6 bg-[#0b6b5f] dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
-    <!-- LOGO -->
-    <div class="flex items-center gap-3">
-      <img src="logo01.img" alt="Logo" class="w-10 h-10 rounded-md object-contain bg-white p-1">
-      <span class="text-2xl font-bold text-white">AMAN</span>
-    </div>
+            <!-- LOGO -->
+            <div class="flex items-center gap-3">
+                <img src="logo01.img" alt="Logo" class="w-10 h-10 rounded-md object-contain bg-white p-1">
+                <span class="text-2xl font-bold text-white">AMAN</span>
+            </div>
 
-    <!-- DESKTOP MENU -->
-    <nav class="hidden md:flex gap-10 font-medium text-white items-center">
-      <a href="#home" class="hover:text-yellow-400">Home</a>
-      <a href="#About" class="hover:text-yellow-400">About</a>
-      <a href="#skills" class="hover:text-yellow-400">Skills</a>
-      <a href="#services" class="hover:text-yellow-400">Services</a>
-      <a href="#contact" class="hover:text-yellow-400">Contact</a>
-      <a href="#Education" class="hover:text-yellow-400">Education</a>
+            <!-- DESKTOP MENU -->
+            <nav class="hidden md:flex gap-10 font-medium text-white items-center">
+                <a href="#home" class="hover:text-yellow-400">Home</a>
+                <a href="#About" class="hover:text-yellow-400">About</a>
+                <a href="#skills" class="hover:text-yellow-400">Skills</a>
+                <a href="#services" class="hover:text-yellow-400">Services</a>
+                <a href="#contact" class="hover:text-yellow-400">Contact</a>
+                <a href="#Education" class="hover:text-yellow-400">Education</a>
 
-      <!-- DESKTOP SOCIAL & DARK MODE -->
-      <div class="flex items-center gap-4 ml-6 text-xl">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <button onclick="toggleDarkMode()" class="ml-2 px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded">🌙</button>
-      </div>
-    </nav>
+                <!-- DESKTOP SOCIAL & DARK MODE -->
+                <div class="flex items-center gap-4 ml-6 text-xl">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        title="Visit my LinkedIn profile" class="text-white-700 text-xl hover:scale-110 transition">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
 
-    <!-- MOBILE MENU BUTTON -->
-    <button id="menuBtn" class="md:hidden text-white text-3xl">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        title="Visit my Facebook profile" class="text-white-700 text-xl hover:scale-110 transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
 
-  <!-- MOBILE MENU DROPDOWN -->
-  
-  <div id="mobileMenu" class="hidden md:hidden bg-[#0b6b5f] px-4 py-4 space-y-2 rounded-b-lg shadow-lg">
-    <a href="#home" class="block py-2 px-3 rounded hover:text-yellow-400">Home</a>
-    <a href="#About" class="block py-2 px-3 rounded hover:text-yellow-400">About</a>
-    <a href="#skills" class="block py-2 px-3 rounded hover:text-yellow-400">Skills</a>
-    <a href="#services" class="block py-2 px-3 rounded hover:text-yellow-400">Services</a>
-    <a href="#contact" class="block py-2 px-3 rounded hover:text-yellow-400">Contact</a>
-    <a href="#Education" class="block py-2 px-3 rounded hover:text-yellow-400">Education</a>
+                    <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
+                        title="Chat with me on WhatsApp" class="text-white-500 text-xl hover:scale-110 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <button onclick="toggleDarkMode()"
+                        class="ml-2 px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded">🌙</button>
+                </div>
+            </nav>
 
-    <div class="flex justify-center gap-4 mt-4 text-xl text-white">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-    </div>
+            <!-- MOBILE MENU BUTTON -->
+            <button id="menuBtn" class="md:hidden text-white text-3xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
-    <button onclick="toggleDarkMode()"
-      class="mt-4 w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded text-center">
-      🌙 Dark Mode
-    </button>
-  </div>
-</header>
-    
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobileMenu" class="hidden md:hidden bg-[#0b6b5f] px-4 py-4 space-y-2 rounded-b-lg shadow-lg">
+            <a href="#home" class="block py-2 px-3 rounded hover:text-yellow-400">Home</a>
+            <a href="#About" class="block py-2 px-3 rounded hover:text-yellow-400">About</a>
+            <a href="#skills" class="block py-2 px-3 rounded hover:text-yellow-400">Skills</a>
+            <a href="#services" class="block py-2 px-3 rounded hover:text-yellow-400">Services</a>
+            <a href="#contact" class="block py-2 px-3 rounded hover:text-yellow-400">Contact</a>
+            <a href="#Education" class="block py-2 px-3 rounded hover:text-yellow-400">Education</a>
+
+            <div class="flex justify-center gap-4 mt-4 text-xl text-white">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                    title="Visit my LinkedIn profile" class="text-white-700 text-xl hover:scale-110 transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                    title="Visit my Facebook profile" class="text-white-700 text-xl hover:scale-110 transition">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://wa.me/918894435516" target="_blank" rel="noopener noreferrer"
+                    title="Chat with me on WhatsApp" class="text-white-500 text-xl hover:scale-110 transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <button onclick="toggleDarkMode()"
+                class="mt-4 w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded text-center">
+                🌙 Dark Mode
+            </button>
+        </div>
+    </header>
+
+
+
+
+
+
     <!-- ================= HERO SECTION ================= -->
     <section id="home" class="min-h-screen flex items-center
- bg-gradient-to-br from-[#0b6b5f] via-[#0f766e] to-[#115e59]
- dark:from-gray-900 dark:to-gray-950">
+            bg-gradient-to-br from-[#0b6b5f] via-[#0f766e] to-[#115e59]
+            dark:from-gray-900 dark:to-gray-950">
 
-        <div class="max-w-7xl mx-auto px-6 w-full">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center gap-12">
 
-                <!-- LEFT -->
-                <div class="flex-1">
-                    <p class="text-lg mb-3">Hey, my name is</p>
-                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
-                        AMAN <br> KUMAR
-                    </h1>
-
-                    <div class="w-24 h-2 bg-yellow-400 my-5 rounded-full"></div>
-
-                    <p class="uppercase tracking-widest text-gray-200">
-                        Web Designer / Frontend Developer <br> UI/UX Designer
-                    </p>
-                </div>
-
-                <!-- IMAGE -->
-                <div class="flex-1 flex justify-center">
-                    <div
-                        class="bg-yellow-400 rounded-[200px] w-[300px] h-[420px] overflow-hidden flex items-end justify-center">
-                        <img src="IMG20241028131354-removebg-preview.png" alt="Profile"
-                            class="w-full h-full object-cover object-top scale-105" />
-                    </div>
-                </div>
-
-                <!-- RIGHT -->
-                <div class="flex-1 text-center md:text-right space-y-10">
-                    <div>
-                        <p class="text-gray-200">Experience</p>
-                        <h2 class="text-4xl font-bold">3 Months Internship</h2>
-                    </div>
-
-                    <div>
-                        <p class="text-gray-200">Projects Done</p>
-                        <h2 class="text-5xl font-bold">2+</h2>
-                    </div>
-                </div>
-
+            <!-- LEFT TEXT -->
+            <div class="md:w-1/3 flex flex-col space-y-4">
+                <p class="text-xl text-gray-200 font-bold">Hey, my name is</p>
+                <h1 class="text-[120px] md:text-[80px] font-extrabold leading-tight text-white">
+                    AMAN <br> KUMAR
+                </h1>
+                <div class="w-24 h-2 bg-yellow-400 rounded-full"></div>
+                <p class="uppercase tracking-widest text-gray-200 text-lg md:text-xl">
+                    Web Designer / Frontend Developer <br> UI/UX Designer
+                </p>
             </div>
+
+            <!-- CENTER IMAGE -->
+            <div class="md:w-1/3 flex justify-center my-10 md:my-0">
+                <div
+                    class="bg-yellow-400 rounded-[200px] w-[300px] h-[420px] overflow-hidden flex items-end justify-center">
+                    <img src="IMG20241028131354-removebg-preview.png" alt="Profile"
+                        class="w-full h-full object-cover object-top scale-105" />
+                </div>
+            </div>
+
+            <!-- RIGHT STATS -->
+            <div class="md:w-1/3 flex flex-col text-center md:text-right space-y-10">
+                <div>
+                    <p class="text-gray-200 uppercase tracking-widest">Experience</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">3 Months Internship</h2>
+                </div>
+
+                <div>
+                    <p class="text-gray-200 uppercase tracking-widest">Projects Done</p>
+                    <h2 class="text-5xl md:text-6xl font-bold text-white">2+</h2>
+                </div>
+            </div>
+
         </div>
     </section>
+
 
     <!-- ================= SKILLS ================= -->
     <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900">
@@ -136,70 +160,99 @@
 
                 <!-- SKILL CARD -->
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="Html5.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">HTML5</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">90%</p>
-
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">HTML5
+                    </h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 mt-2 group-hover:text-white transition">
+                        90%</p>
                 </div>
 
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="css3.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">CSS3</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">85%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">CSS3
+                    </h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 mt-2 group-hover:text-white transition">
+                        85%</p>
                 </div>
 
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="Tailwind_CSS_Logo.svg" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">Tailwind CSS</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">80%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                        Tailwind CSS</h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-600 mt-2 group-hover:text-white transition">
+                        80%</p>
                 </div>
 
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="js.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">JavaScript</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">70%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                        JavaScript</h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 mt-2 group-hover:text-white transition">
+                        70%</p>
                 </div>
                 <!-- UI / UX -->
                 <div
-                    class="border rounded-3xl py-10 text-center  hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="UI.12.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">UI / UX Design</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">75%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">UI /
+                        UX Design</h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 mt-2 group-hover:text-white transition">
+                        75%</p>
                 </div> <!-- Figma -->
                 <div
-                    class="border rounded-3xl py-10 text-center  hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="FIGMA.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">Figma</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">80%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">Figma
+                    </h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 mt-2 group-hover:text-white transition">
+                        80%</p>
                 </div>
                 <!-- jQuery -->
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="jQuery.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">jQuery</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">65%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">jQuery
+                    </h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 group-hover:text-white transition mt-2">
+                        65%</p>
                 </div> <!-- Photoshop -->
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="Photoshop.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">Photoshop</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">75%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                        Photoshop</h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 group-hover:text-white transition mt-2">
+                        75%</p>
                 </div> <!-- WordPress -->
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="woldprees.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">WordPress</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">80%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">
+                        WordPress</h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 group-hover:text-white transition mt-2">
+                        80%</p>
                 </div> <!-- React (Basic) -->
                 <div
-                    class="border rounded-3xl py-10 text-center hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition">
+                    class="group border bg-white dark:bg-gray-800 rounded-3xl py-10 text-center hover:bg-[#0b6b5f] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     <img src="React.png" class="w-14 mx-auto mb-4">
-                    <h3 class="font-semibold text-gray-800 dark:text-white">React (Basic)</h3>
-                    <p class="text-gray-500 dark:text-gray-300 mt-2">65%</p>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-white transition">React
+                        (Basic)</h3>
+                    <p
+                        class="text-xl font-bold text-gray-500 dark:text-gray-300 group-hover:text-white transition mt-2">
+                        65%</p>
                 </div>
             </div>
         </div>
@@ -244,7 +297,7 @@
                             Senior Secondary (12th)
                         </h4>
                         <p class="text-gray-600 dark:text-white mt-2">
-                            Completed higher secondary education (12th) with 65.8% marks.
+                            Completed higher secondary education (12th)with 65.8% marks.
                         </p>
                     </div>
 
@@ -255,7 +308,7 @@
                             Secondary School (10th)
                         </h4>
                         <p class="text-gray-600 dark:text-white mt-2">
-                           Completed Secondary School (10th) in 2015 with 63.4% marks.
+                            Completed Secondary School (10th) in 2015 with 63.4% marks.
                         </p>
                     </div>
                 </div>
@@ -316,13 +369,13 @@
                     MY SERVICES
                 </h2>
 
-                <a href="#home" class="bg-[#e7f2ef] text-[#0b6b5f]
-          dark:bg-white dark:text-gray-900
-          px-6 py-2 rounded-full font-semibold inline-block
-          hover:bg-[#0b6b5f] hover:text-white
-          dark:hover:bg-gray-200 transition">
+                <a href="#home"
+                    class="bg-[#e7f2ef] text-[#0b6b5f] dark:bg-white dark:text-gray-900 
+                    px-6 py-2 rounded-full font-semibold inline-block hover:bg-[#0b6b5f] hover:text-white 
+                    hover:shadow-[0_30px_70px_rgba(11,107,95,0.4)] hover:-translate-y-3 transition duration-300 ease-in-out">
                     VIEW ALL
                 </a>
+
 
 
             </div>
@@ -331,70 +384,66 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 <!-- Card 01 -->
-                <div class="relative border rounded-3xl p-10 bg-white dark:bg-gray-800
-               hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition
-               dark:border-gray-700">
+                <div class="group relative border rounded-3xl p-10 bg-white dark:bg-gray-800
+               hover:bg-[#0b6b5f] hover:shadow-[0_30px_70px_rgba(11,107,95,0.4)] hover:-translate-y-3
+                  transition duration-300 ease-in-out">
 
-                    <span class="absolute top-6 right-6 text-gray-600 dark:text-gray-300 text-5xl font-bold">
+                    <span
+                        class="absolute top-6 right-6 text-gray-600 dark:text-gray-300 text-5xl font-bold group-hover:text-white transition">
                         01
                     </span>
 
                     <img src="UI.12.png" class="w-14 mb-6">
 
-                    <h3 class="font-semibold text-gray-800 dark:text-white
-                 hover:text-white dark:hover:text-white">
+                    <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-white transition">
                         Web Design
                     </h3>
 
-                    <p class="text-gray-600 dark:text-gray-300
-                 hover:text-white dark:hover:text-white">
+                    <p class="text-gray-600 dark:text-gray-300 group-hover:text-white transition">
                         Modern, responsive websites using HTML, CSS, Tailwind CSS & JavaScript.
                     </p>
                 </div>
 
                 <!-- Card 02 -->
-                <div class="relative border rounded-3xl p-10 bg-white dark:bg-gray-800
-               hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition
-               dark:border-gray-700">
+                <div
+                    class="group relative border rounded-3xl p-10 bg-white dark:bg-gray-800
+               hover:bg-[#0b6b5f] hover:shadow-[0_30px_70px_rgba(11,107,95,0.4)] hover:-translate-y-3 transition duration-300 ease-in-out">
 
-                    <span class="absolute top-6 right-6 text-gray-600 dark:text-gray-300 text-5xl font-bold">
+                    <span
+                        class="absolute top-6 right-6 text-gray-600 dark:text-gray-300 text-5xl font-bold  group-hover:text-white transition">
                         02
                     </span>
 
                     <img src="js.png" class="w-14 mb-6">
 
-                    <h3 class="font-semibold text-gray-800 dark:text-white
-                 hover:text-white dark:hover:text-white">
+                    <h3 class="font-semibold text-gray-800 dark:text-white  group-hover:text-white transition">
                         WordPress Development
                     </h3>
 
-                    <p class="text-gray-600 dark:text-gray-300
-                 hover:text-white dark:hover:text-white">
+                    <p class="text-gray-600 dark:text-gray-300  group-hover:text-white transition">
                         Custom WordPress websites, themes and business landing pages.
                     </p>
                 </div>
-
                 <!-- Card 03 -->
-                <div class="relative border rounded-3xl p-10 bg-white dark:bg-gray-800
-               hover:bg-green-400 hover:shadow-xl hover:-translate-y-2 transition
-               dark:border-gray-700">
+                <div class="group relative border rounded-3xl p-10 bg-white dark:bg-gray-800 hover:bg-[#0b6b5f] hover:shadow-[0_30px_70px_rgba(11,107,95,0.4)]
+                    hover:-translate-y-3 transition duration-300 ease-in-out">
 
-                    <span class="absolute top-6 right-6 text-gray-600 dark:text-gray-300 text-5xl font-bold">
+                    <span
+                        class="absolute top-6 right-6 text-gray-600 dark:text-gray-300 text-5xl font-bold group-hover:text-white transition">
                         03
                     </span>
 
                     <img src="SERVICES.png" class="w-14 mb-6">
 
-                    <h3 class="font-semibold text-gray-800 dark:text-white
-                 hover:text-white dark:hover:text-white">
+                    <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-white transition">
                         Graphic & UI Design
                     </h3>
 
-                    <p class="text-gray-600 dark:text-gray-300
-                 hover:text-white dark:hover:text-white">
+                    <p class="text-gray-600 dark:text-gray-300 group-hover:text-white transition">
                         UI/UX design, banners and social media creatives using Figma & Photoshop.
                     </p>
                 </div>
+
 
             </div>
         </div>
@@ -479,7 +528,7 @@
 
                 <!-- RIGHT IMAGE -->
                 <div class="flex justify-center lg:justify-end">
-                    <div class="w-72 h-72 rounded-full overflow-hidden border-8 border-[#e7f2ef]">
+                    <div class="w-72 h-72 rounded-full overflow-hidden">
                         <img src="IMG20241028131354-removebg-preview.png" alt="Aman Kumar"
                             class=" bg-yellow-400 w-md h-md object-cover" />
                     </div>
@@ -607,20 +656,16 @@
 
 
     <!-- SCROLL TO TOP -->
-    <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-3 rounded-full
-         opacity-0 translate-y-20 pointer-events-none
-         transition-all duration-500 ease-out">
-        Top
+    <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-[#0b6b5f] text-white
+     w-12 h-12 flex items-center justify-center rounded-full shadow-lg opacity-0 translate-y-20 pointer-events-none
+     transition-all duration-500 ease-out hover:shadow-[0_15px_40px_rgba(11,107,95,0.5)] hover:-translate-y-1">
+
+        Top↑
     </button>
+
 
 
 
 </body>
 
-
 </html>
-
-
-
-
-
