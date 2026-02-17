@@ -20,9 +20,10 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+<!-- Tailwind (preload to reduce render blocking) -->
+<link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+<script src="https://cdn.tailwindcss.com" defer></script>
 
-    <!-- Tailwind (deferred to reduce render blocking) -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
  <!-- Preload Font Awesome -->
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
@@ -541,4 +542,5 @@ text-center lg:text-right space-y-10">
 </body>
 
 </html>
+
 
